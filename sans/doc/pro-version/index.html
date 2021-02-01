@@ -170,10 +170,157 @@ Pro」後，無論是字符間距還是行數出現改變的機會非常大。�
 <p>另一方面，昭源黑體經過多年發展，現時可以説是已踏入「穩定期」。相對而言，昭源黑體 Pro 算是一個新嘗試，發展如何暫難預料。所以，分成兩個版本也是為自己留一條後路，防止出現早期昭源黑體曾經嘗試嵌入 Noto Sans
 字體、但後來發現並不可行而在其後版本還原的情況。</p>
 <p>因此，起碼在目前，昭源黑體 Pro 仍然會跟本來的昭源黑體並行發展，有獨立的更新週期。</p>
+<h2 id="opentype-功能">OpenType 功能</h2>
+<h3 id="從-source-sans-pro-繼承的-opentype-功能">從 Source Sans Pro 繼承的 OpenType 功能</h3>
+<p>Source Sans 3 包含大量 OpenType 字型功能，使用者可以利用這些功能調出替代字元。這些字型功能在昭源黑體 Pro 會盡量保留。以下是一些例子：</p>
+<table class="table table-opentype-features">
+   <thead>
+      <tr>
+         <th>功能碼</th>
+         <th>套用前</th>
+         <th>套用後</th>
+         <th>備註</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><code>cv01/ss01</code></td>
+         <td><span>I</span></td>
+         <td><span style="font-feature-settings:'ss01'">I</span></td>
+         <td>Latin serifed I</td>
+      </tr>
+      <tr>
+         <td><code>ss02</code></td>
+         <td><span>al</span></td>
+         <td><span style="font-feature-settings:'ss02'">al</span></td>
+         <td>Simple a/l</td>
+      </tr>
+      <tr>
+         <td><code>cv02/ss03</code></td>
+         <td><span>a</span></td>
+         <td><span style="font-feature-settings:'ss03'">a</span></td>
+         <td>Latin single storey a</td>
+      </tr>
+      <tr>
+         <td><code>cv03/ss04</code></td>
+         <td><span>g</span></td>
+         <td><span style="font-feature-settings:'ss04'">g</span></td>
+         <td>Looptail g</td>
+      </tr>
+      <tr>
+         <td><code>cv04/ss05</code></td>
+         <td><span>l</span></td>
+         <td><span style="font-feature-settings:'ss05'">l</span></td>
+         <td>Latin straight l</td>
+      </tr>
+      <tr>
+         <td><code>cv05/ss06</code></td>
+         <td><span>a</span></td>
+         <td><span style="font-feature-settings:'ss06'">a</span></td>
+         <td>Serifed a, second alternate</td>
+      </tr>
+      <tr>
+         <td><code>cv17/ss09</code></td>
+         <td><span>0123</span></td>
+         <td><span style="font-feature-settings:'ss09'">0123</span></td>
+         <td>Alternate figures</td>
+      </tr>
+      <tr>
+         <td><code>cv18/ss10</code></td>
+         <td><span>0</span></td>
+         <td><span style="font-feature-settings:'ss10'">0</span></td>
+         <td>Dotted zero</td>
+      </tr>
+      <tr>
+         <td><code>cv19/zero</code></td>
+         <td><span>0</span></td>
+         <td><span style="font-feature-settings:'zero'">0</span></td>
+         <td>Slashed zero</td>
+      </tr>
+      <tr>
+         <td><code>numr</code></td>
+         <td><span>0123</span></td>
+         <td><span style="font-feature-settings:'numr'">0123</span></td>
+         <td>Numerators</td>
+      </tr>
+      <tr>
+         <td><code>dnom</code></td>
+         <td><span>0123</span></td>
+         <td><span style="font-feature-settings:'dnom'">0123</span></td>
+         <td>Denominators</td>
+      </tr>
+      <tr>
+         <td><code>frac</code></td>
+         <td><span>1/4 4/6</span></td>
+         <td><span style="font-feature-settings:'frac'">1/4 4/6</span></td>
+         <td>Fractions</td>
+      </tr>
+   </tbody>
+</table>
+<blockquote>
+<p>註：
+Source Sans 3 可透過 cv18/cv19/ss10 等 OpenType 功能調出數字 0 的不同款式。不過由於昭源黑體預設輸出 capped 版數字，使用這些功能調出的數字 0 變體會比本來其他數字略矮。Source Sans 3 本身沒有為 capped 版提供其他款式的 0 字字形。</p>
+</blockquote>
+<h3 id="昭源黑體-pro-的新增-opentype-功能">昭源黑體 Pro 的新增 OpenType 功能</h3>
+<p>除此之後，昭源黑體 Pro 還新增了以下 OpenType 功能：</p>
+<p>某些字元（主要是 ▲、♠、← 等符號）在 Source Sans 3 是以英文排版用的「調和」 (proportional) 形式呈現，但在思源黑體則是以方便跟中文配搭的「全形」形式顯示。由於歷史原因，使用者會期望大多數此類字元在中文字體是以全形描繪，所以不能貿然一刀切以 Source Sans 3 的英文版字元取而代之。另一方面，我覺得 Source Sans 3 的英文版字元也有保留價值。經考慮後，決定在昭源黑體 Pro 將某些字元預設為全形、另一些預設為調和款式。</p>
+<p>當然，這種改變肯定不能滿足所有人⸺有些人會希望某個字形預設輸出中文版，同一個字形其他人會希望預設輸出英文版。因此，昭源黑體 Pro 新增了兩個 Character Variant / Stylistic Set 功能，俾使用者在支援的應用程式中切換二者：</p>
+<table class="table table-opentype-features">
+   <thead>
+      <tr>
+         <th>功能碼</th>
+         <th>套用前</th>
+         <th>套用後</th>
+         <th>備註</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><code>ss11/cv20</code></td>
+         <td><span>←↑<br/>‼⁉<br/>⸺<br/>⸻</span></td>
+         <td><span style="font-feature-settings:'ss11'">←↑<br/>‼⁉<br/>⸺<br/>⸻</span></td>
+         <td>預設為全形，套用後改為調和款式</td>
+      </tr>
+      <tr>
+         <td rowspan="2"><code>cv21/ss12</code></td>
+         <td><span>×÷<br/>▪∑</span></td>
+         <td><span style="font-feature-settings:'ss12'">×÷<br/>▪∑</span></td>
+         <td>預設為調和款式，套用後改為全形</td>
+      </tr>
+   </tbody>
+</table>
+<h3 id="試驗性-opentype-功能">試驗性 OpenType 功能</h3>
+<p>最後，昭源黑體新增了一個屬試驗性質的 <code>ss13/cv22</code> 功能，方便調出某些平時較難直接輸入的符號：</p>
+<ul>
+<li>輸入 !!, !?, ?!, ?? 分別會調出全形的 <code>U+203C Double Exclamation Mark</code> (‼)、<code>U+2049 Exclamation Question Mark</code> (⁉)、<code>U+2048 Question Exclamation Mark</code> (⁈) 及 <code>U+2047 Double Question Mark</code> (⁇)。</li>
+<li>輸入兩個或三個全形連接號 — (<code>U+2014</code>）可以呼叫出中文版佔兩個或三個字元的 ⸺ (<code>U+2E3A</code>) 和 ⸻ (<code>U+2E3B</code>)。</li>
+<li>輸入雙數的全形波浪符號 ～ (<code>U+FF5E</code>) 會視乎橫排直排轉換成 <code>U+3030 Wavy Dash</code> (<span style="font-feature-settings:'ss13'">～～</span>) 或 <code>U+2307 Wavy Line</code> (⌇)。</li>
+</ul>
+<table class="table table-opentype-features-example">
+   <thead>
+      <tr>
+         <th>套用前</th>
+         <th>套用後</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><span>咦～～～～～～!?</span></td>
+         <td><span style="font-feature-settings:'ss13'">咦～～～～～～!?</span></td>
+      </tr>
+   </tbody>
+</table>
 <h2 id="昭源黑體-pro-版的技術細節">昭源黑體 Pro 版的技術細節</h2>
-<p>有關將 Source Sans 3 整合至昭源黑體 Pro 的技術詳情，包括與昭源黑體和 Source Sans 3 的不同之處，請參閲下載壓縮檔內的 README
+<p>更多有關將 Source Sans 3 整合至昭源黑體 Pro 的技術詳情，包括與昭源黑體和 Source Sans 3 的不同之處，請參閲下載壓縮檔內的 README
 檔案（<a href="https://github.com/chiron-fonts/chiron-sans-hk-pro/blob/master/README.zh.md#%E6%95%B4%E5%90%88%E8%A9%B3%E6%83%85" target="_blank">或按此瀏覽</a>）。</p>
-<p>注意：因應 Windows 系統的字型名稱長度限制，本字體的 <em>ExtraLight</em> 字重會改為 <em>ExtraLt</em>。</p>
+<h2 id="昭源黑體-pro-與標準版的分別">昭源黑體 Pro 與標準版的分別</h2>
+<p>除了 LGC 字元的收字外，昭源黑體 Pro 與標準版還有以下分別：</p>
+<h3 id="字重命名">字重命名</h3>
+<p>因應 Windows 系統的字型名稱長度限制，Pro 版的 <em>ExtraLight</em> 字重會改為 <em>ExtraLt</em>。</p>
+<h3 id="桌面裝置格式">桌面裝置格式</h3>
+<p>標準版有 OTF 和 TTF 兩種格式，Pro 版只有 OTF 版。製作 TTF 版並不困難，問題是 Source Sans Pro 的 OpenType 功能能否完整保留、又會不會有其他問題出現。由於測試需時，遇有問題亦未必能完滿解決，所以暫不考慮提供 TTF 格式字型。</p>
+<h3 id="webfont-網頁字型">Webfont 網頁字型</h3>
+<p>跟標準版不同，Pro 版的網頁字型沒有提供以使用者裝置上的昭源黑體為優先的 <code>[字重]_fb.css</code> 的樣式表。雖然這樣做可機會減少下載量，但假如使用者手頭版本跟網頁使用的版本不同、而字形有出入，或會引起爭議。經衡量後決定不提供 <code>[字重]_fb.css</code> 的樣式表。其實即使是標準版也不建議選用 <code>[字重]_fb.css</code> 版本，不過為保持兼容性所以暫未移除。</p>
 
         </div>
 
