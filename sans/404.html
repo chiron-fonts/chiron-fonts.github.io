@@ -37,7 +37,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk@2.040/build/webfont/css/vf.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/ExtraLight.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Light.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Normal.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Regular.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Medium.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Bold.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.003/build/webfont/css/Heavy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chiron-fonts/chiron-sans-hk-pro@1.005/build/webfont/css/vf.css">
 
     <!--Favicon-->
     
@@ -105,7 +105,7 @@
 					</li>
 					
 					<li class="nav-item">
-            <a class="nav-link" href="https://chiron-fonts.github.io/sans#license">授權</a>
+            <a class="nav-link" href="https://chiron-fonts.github.io/sans#license">授權及資助</a>
 					</li>
 					
 					<li class="nav-item">
@@ -150,8 +150,8 @@
                         <dt><label>字型</label></dt>
                         <dd>
                             <div class="btn-group font-buttons" role="group">
-                                <button type="button" class="btn btn-primary" data-font-family="std" data-vf="1">昭源黑體 <sub>(可變式字型)</sub></button>
-                                <button type="button" class="btn btn-light" data-font-family="pro" data-vf="0">昭源黑體 PRO</button>
+                                <button type="button" class="btn btn-primary" data-font-family="std" data-vf="1">昭源黑體</button>
+                                <button type="button" class="btn btn-light" data-font-family="pro" data-vf="1">昭源黑體 PRO</button>
                             </div>
                         </dd>
                     </dl>
@@ -185,7 +185,7 @@
                     </dl>
                     <dl>
                         <dt><label>大小</label></dt>
-                        <dd><input id="font-size-range" class="custom-range" type="range" min="24" max="240" value="30"></dd>
+                        <dd><input id="font-size-range" class="custom-range" type="range" min="24" max="360" value="30"></dd>
                     </dl>
                 </div>
                 <div class="preview std" id="preview-area">
@@ -193,9 +193,15 @@
                         ① 你可以在這個測試區輸入文字，並利用上面的工具切換不同字重和大小，預覽昭源黑體的顯示效果。<br/>
                         ② 本網頁使用「昭源黑體網頁字型」排版，收字比桌面用的 OTF/TTF 版少，因此不反映 OTF/TTF 版的收字量。<br/>
                         ③ 在文字框輸入文字後，瀏覽器或須下載相應的網頁字型子集以作顯示，這會導致額外的數據用量，流動數據網絡使用者敬請留意。<br/>
-                        ④ 「昭源黑體 PRO」每個字重需單獨下載；「昭源黑體」支援可變式字型，切換字重不須另外下載子集。<br/>
-                        ⑤ 新造字示範： &lt;香港字&gt;𫬷𭉝𡂫𰇛 &lt;台客語字&gt;𪜶𣁳𦊓𧺤𣮈𤲍𫝛𦟪𤺅𣰈𨒇𩜰 &lt;粵語網站字頭&gt;𢆶𢇛𠦒𡖊𢦔𡊄𢻻𣧑𥎊𦉆𦕈𦘴𦙫𦚟𦜐𦜓𤨏𤰯𢵿𢷬𢸄𣙜𣡌𣺌𣽉𣾰𤑾𤒦𤱊𤴡𤵜𤶀𥕌𥼝𦄿𦐈𩰓𩵒𩵫𪀉<br/>
-                        ⑥ 昭源黑體 PRO 版獨有字元示範：⅓⅔⅛⅜⅝₹₺₽ЋЌЏ<br/>
+                        ④ 「昭源黑體」和「昭源黑體 PRO」均已支援可變式字型，切換字重不須另外下載子集。<br/>
+                        ⑤ 昭源黑體新造字示例：<br>
+                        　　　香港字⸺𫬷𭉝𡂫𰇛<br/>
+                        　　　台客語字⸺𪜶𣁳𦊓𧺤𣮈𤲍𫝛𦟪𤺅𣰈𨒇𩜰<br/>
+                        　　　粵語網站字頭⸺𢆶𢇛𠦒𡖊𢦔𡊄𢻻𣧑𥎊𦉆𦕈𦘴𦙫𦚟𦜐𦜓𤨏𢸄𣡌𣽉𤒦𤴡𤶀𥼝𩵒<br/>
+                        ⑥ 昭源黑體 PRO 版獨有字元示例：<br/>
+                        　　　⅓⅔⅛⅜⅝₹₺ļķžģņ₽ЋЌЏάήόύє<br/>
+                        　　　（有些字如“пиключпящв”在標準版的桌面字型也有提供，但只在 Pro 版網頁字型收入）
+                        <br/>
                     </div>
                 </div>
             </div>
