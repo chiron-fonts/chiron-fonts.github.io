@@ -1,0 +1,191 @@
+html, body {
+  font-family: 'Chiron Sung HK WS', 'Adobe NotDef';
+  font-variation-settings: "INSP" 5;
+}
+
+/* === */
+
+/*#previewModal .modal-header {*/
+/*    border-bottom: 0;*/
+/*}*/
+
+:root {
+  --separator-color: #dee2e6;
+}
+
+span[lang=en] {
+  padding-left: 4px;
+}
+
+#previewModal .modal-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#previewModal .toolbar {
+  /*border-bottom: 1px solid var(--separator-color);*/
+  /*background-color: --separator-color;*/
+  padding: 1rem 1.5rem;
+  border-right: 1px solid var(--separator-color);
+}
+
+#previewModal .toolbar dl {
+}
+
+#previewModal .toolbar dl dd {
+  margin-bottom: .2rem;
+}
+
+#previewModal .toolbar dl dt {
+  padding: 5px 10px 0 0;
+  font-weight: 300;
+  font-variation-settings: "PADG" 8;
+  margin-bottom: 3px;
+  color: #666;
+}
+
+#previewModal .toolbar input.custom-range {
+  /*height: 2.3rem;*/
+  width: 100%;
+}
+
+#previewModal .toolbar button {
+  padding: 5px;
+  /* border-color: var(--separator-color); */
+  /*border: 1px solid transparent;*/
+}
+
+#previewModal .toolbar button.btn-primary {
+  /* background-color: transparent; */
+}
+
+#previewModal .toolbar button.btn-light {
+  /* background-color: transparent; */
+}
+
+#previewModal div.group {
+  text-align: center;
+  margin: 0.5rem 0;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--separator-color);
+  padding: 0.2rem;
+}
+
+.font-preview-box {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.font-preview-box .toolbar .btn-group {
+  display: flex;
+}
+
+.toolbar .btn-group sub {
+  bottom: 0;
+  font-weight: 300;
+}
+
+#preview-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+#preview-area.std {
+  font-family: 'Chiron Sung HK WS', 'Adobe NotDef';
+  font-style: normal;
+}
+
+#preview-area.std.italic {
+  font-family: 'Chiron Sung HK WS', 'Adobe NotDef';
+  font-style: italic;
+}
+
+#preview-area > div {
+  transition: font-weight 0.4s;
+}
+
+#preview-area > div {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+  height: 100%;
+  max-height: 100%;
+  display: block;
+  width: 100%;
+  border: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 24px;
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    position: static;
+  }
+
+  .font-preview-box > .row {
+    display: block;
+  }
+
+  .modal-header {
+    padding: 0.5rem 1rem;
+  }
+
+  #previewModal .toolbar {
+    border-bottom: 1px solid var(--separator-color);
+    border-right: 0;
+    height: auto;
+  }
+
+  #previewModal .toolbar dl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  #previewModal .toolbar dl dt {
+    flex: 2;
+    padding: 0;
+  }
+
+  #previewModal .toolbar dl dt div {
+    padding-right: 5px;
+    font-weight: 400;
+  }
+
+  #previewModal .toolbar dl dd {
+    flex: 4;
+    padding: 0;
+  }
+
+  #previewModal div.group {
+    text-align: left;
+  }
+
+  #preview-area > div {
+    line-height: 1.4;
+  }
+
+  span[lang=en] {
+	display: none;
+  }
+}
+
+#preview-area dl, #preview-area ol, #preview-area ul {
+    padding-left: 1em;
+}
+
+@media (min-width: 768px) {
+  #previewModal .toolbar {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
