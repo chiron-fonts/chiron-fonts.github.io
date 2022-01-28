@@ -1,5 +1,12 @@
 $(window).on('load', function () {
 
+  var params = new URLSearchParams(location.search);
+  var defaultText = params.has('t') ? params.get('t').substring(0, 100) : null;
+  var defaultWeight = params.has('w') ? parseInt(params.get('w')) : 400;
+  var defaultSize = params.has('s') ? parseInt(params.get('s')) : 30;
+  var defaultItalic = params.has('i') ? parseInt(params.get('i')) : 0;
+  var defaultPadding = params.has('p') ? parseInt(params.get('p')) : 0;
+
   $('.font-preview-box').each(function (_) {
     var $box = $(this);
     var $contentContainer = $('#preview-area');
@@ -29,10 +36,10 @@ $(window).on('load', function () {
       var value = $(this).val();
       $(this).parent().parent().find('.cr-value')[0].innerText = value;
       $content.css('font-variation-settings', '"PADG" ' + value);
-      $('#font-padding button', $box).each(function () {
+      $('#font-padding-preset button', $box).each(function () {
         var $this = $(this);
         $this.removeClass('btn-secondary').addClass('btn-light');
-        if ($this.data('value') == value) {
+        if (value == $this.data('value')) {
           $this.removeClass('btn-light').addClass('btn-secondary');
         }
       });
@@ -44,7 +51,6 @@ $(window).on('load', function () {
       $content.css('font-weight', $(this).data('weight'));
       $('#font-weight-range', $box).val($(this).data('weight')).trigger('change');
     });
-
 
     $('#font-padding-preset button', $box).on('mouseover', function (e) {
       var $this = $(this);
@@ -82,6 +88,27 @@ $(window).on('load', function () {
       var text = (e.originalEvent || e).clipboardData.getData('text/plain');
       document.execCommand("insertHTML", false, text);
     });
+
+
+    if (defaultText) {
+      $content.text(defaultText);
+    }
+
+    if (defaultSize) {
+      $('#font-size-range', $box).val(defaultSize).trigger('input');
+    }
+
+    if (defaultItalic) {
+      $('#font-italic-selector button[data-value=' + defaultItalic + ']', $box).trigger('mouseover');
+    }
+
+    if (defaultWeight) {
+      $('#font-weight-range', $box).val(defaultWeight).trigger('input');
+    }
+
+    if (defaultPadding) {
+      $('#font-padding-range', $box).val(defaultPadding).trigger('input');
+    }
   });
 
   $('#preview-trigger, .preview-trigger').click(function () {
