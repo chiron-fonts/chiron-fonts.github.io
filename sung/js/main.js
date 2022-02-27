@@ -7,10 +7,15 @@ $(window).on('load', function () {
   var defaultItalic = params.has('i') ? parseInt(params.get('i')) : 0;
   var defaultPadding = params.has('p') ? parseInt(params.get('p')) : 0;
 
+  $('main').click(function() {
+    $(this).attr('contenteditable', 'true');
+    $(this).focus();
+  });
+
   $('.font-preview-box').each(function (_) {
     var $box = $(this);
     var $contentContainer = $('#preview-area');
-    var $content = $('div', $contentContainer);
+    var $content = $('main', $contentContainer);
 
     $('#font-size-range', $box).on('input', function (e) {
       $content.css('font-size', $(this).val() + "px");
@@ -90,9 +95,9 @@ $(window).on('load', function () {
     });
 
 
-    if (defaultText) {
-      $content.text(defaultText);
-    }
+    // if (defaultText) {
+    //   $content.text(defaultText);
+    // }
 
     if (defaultSize) {
       $('#font-size-range', $box).val(defaultSize).trigger('input');
