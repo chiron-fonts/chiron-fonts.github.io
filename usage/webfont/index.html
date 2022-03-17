@@ -8,8 +8,12 @@
 <meta name="generator" content="Hugo 0.93.0" />
 
 
+  <meta name="description" content="昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
+網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。
+網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
+字體屬可變式字型格式，因此只需載入「正體」(WEBFONT/css/vf.css) 及「斜體」(WEBFONT/css/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。" />
 
-    <title>昭源字體</title>
+    <title>網頁字型 | 昭源字體</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +32,65 @@
     
 
     
+  <meta
+    property="og:title"
+    content="網頁字型"
+  />
   <meta property="og:site_name" content="昭源字體" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+  <meta property="og:description" content="昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
+網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。
+網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
+字體屬可變式字型格式，因此只需載入「正體」(WEBFONT/css/vf.css) 及「斜體」(WEBFONT/css/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/usage/webfont/" />
 
-
+<meta property="article:section" content="Usage" />
+    <meta
+      property="article:modified_time"
+      content="2022-03-16T22:03:14+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="" />
+<meta name="twitter:title" content="網頁字型" />
+  <meta name="twitter:description" content="昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
+網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。
+網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
+字體屬可變式字型格式，因此只需載入「正體」(WEBFONT/css/vf.css) 及「斜體」(WEBFONT/css/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "昭源字體",
-      "url": "/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Usage",
+      "name": "網頁字型",
+      "url" : "/usage/webfont/",
+      "headline": "網頁字型",
+      "description": "昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。\n網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5\/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假\/片假名屬於 HKSCS 字集，因此有收入。\n網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT\/ 目錄下就是可以用於網頁的昭源字體網頁字型。\n字體屬可變式字型格式，因此只需載入「正體」(WEBFONT\/css\/vf.css) 及「斜體」(WEBFONT\/css\/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。",
+      "wordCount" : "195",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/usage/webfont/"
+      },
+      "copyrightHolder" : "昭源字體",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-03-16T22:03:14.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "昭源字體",
+          "url": "/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -95,7 +140,7 @@ as="style"
         href="/custom.css"
 media="all"
 />
-<link href="/" rel="canonical" type="text/html" />
+<link href="/usage/webfont/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -142,6 +187,19 @@ media="all"
       
       <header class="gdoc-header">
     <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control" tabindex="0">
+            <i class="fa-solid fa-bars icon gdoc_menu"></i>
+
+
+
+
+            <i class="fa-solid fa-arrow-left icon gdoc_arrow_back"></i>
+
+
+
+
+        </label>
         
         <div>
             <a class="gdoc-brand gdoc-header__link" href="/">
@@ -235,6 +293,562 @@ media="all"
 
       <main class="container flex flex-even">
         
+          <aside class="gdoc-nav">
+            <nav>
+  
+
+
+
+  <section class="gdoc-nav--main">
+    <h2>目錄</h2>
+    
+      
+
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/download/
+                "
+                class="gdoc-nav__entry"
+              >
+                取得字型
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          <span class="flex">使用説明</span>
+        
+
+        
+          
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/formats/
+                "
+                class="gdoc-nav__entry"
+              >
+                字型格式
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/webfont/
+                "
+                class="gdoc-nav__entry is-active"
+              >
+                網頁字型
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          <span class="flex">技術細節</span>
+        
+
+        
+          
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/motivation/
+                "
+                class="gdoc-nav__entry"
+              >
+                創作背景
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/workflow/
+                "
+                class="gdoc-nav__entry"
+              >
+                製作方法及修改範圍
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/source-han-fonts-differences/
+                "
+                class="gdoc-nav__entry"
+              >
+                與思源字體的差異
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/chiron-sans-fonts-differences/
+                "
+                class="gdoc-nav__entry"
+              >
+                昭源黑體版本説明
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/source-han-sans-2/
+                "
+                class="gdoc-nav__entry"
+              >
+                附錄：思源黑體 2.0 介紹
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /license/
+                "
+                class="gdoc-nav__entry"
+              >
+                授權
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /faq/
+                "
+                class="gdoc-nav__entry"
+              >
+                常見問題
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /donate/
+                "
+                class="gdoc-nav__entry"
+              >
+                支持/贊助
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+    
+  </section>
+
+  
+
+
+  <section class="gdoc-nav--more">
+    
+  </section>
+</nav>
+
+          </aside>
+        
 
 
         <div class="gdoc-page content">
@@ -265,85 +879,175 @@ media="all"
 
 
   <article
-    class="gdoc-markdown gdoc-markdown__align--left cover-page"
+    class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1></h1>
-    <div class="gdoc-page__anchorwrap">
-    <h1 id="昭源宋體昭源黑體brspan-langenchiron-sung-hk-and-chiron-hei-hkspan">
-        昭源宋體、昭源黑體<br/><span lang="en">Chiron Sung HK <em>and</em> Chiron Hei HK</span>
-    </h1>
-</div>
-<p class="subtitle">現代筆形風格、平衡標準字形和印刷體慣用筆形的免費開源字型</p>
-<p><a href="#" class="btn preview-trigger"><i class="fa-solid fa-vial"></i>試試看</a>
-<a href="/usage/download/" class="btn"><i class="fa-solid fa-download"></i>下載使用</a></p>
+    <h1>網頁字型</h1>
+    <p>昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。</p>
+<p>網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。</p>
+<blockquote class="gdoc-hint info">
+  網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。
+</blockquote>
+
+
+
+
+  <div class="gdoc-toc gdoc-toc__level--3">
+    <nav id="TableOfContents"><ul>
+        <li><a href="#載入方式">載入方式</a>
+          <ul>
+            <li><a href="#1-手動下載">1. 手動下載</a></li>
+            <li><a href="#2-npm">2. NPM</a></li>
+            <li><a href="#3-cdn-jsdelivr">3. CDN (jsDelivr)</a></li>
+          </ul>
+        </li>
+        <li><a href="#使用">使用</a></li>
+      </ul></nav>
+    <hr />
+  </div>
+
+
 <div class="gdoc-page__anchorwrap">
-    <h2 id="特色">
-        特色
+    <h2 id="載入方式">
+        載入方式
+        <a data-clipboard-text="/usage/webfont/#載入方式" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 載入方式" aria-label="跳到: 載入方式" href="#%e8%bc%89%e5%85%a5%e6%96%b9%e5%bc%8f">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
     </h2>
 </div>
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-users"></i></div>
-            <span>現代筆形設計，兼顧印刷體架構</span>
-        </h3>
-        「昭源黑體」以「思源黑體香港版」為基礎，參考繁體中文地區的商用字體作出修改，目標是提供一個正體中文標準、地區中立、採用現代筆形風格而兼顧標準字形和印刷體架構的開源字體方案。
-    </div>
-    <div>
-        
-        <img src="/images/modern.png">
-    </div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="1-手動下載">
+        1. 手動下載
+        <a data-clipboard-text="/usage/webfont/#1-手動下載" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 1. 手動下載" aria-label="跳到: 1. 手動下載" href="#1-%e6%89%8b%e5%8b%95%e4%b8%8b%e8%bc%89">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
 </div>
-
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-code-pull-request"></i></div>
-            <span>收字繁多，香港字支援充足</span>
-        </h3>
-        <p>思源字體是一款泛中日韓 (Pan-CJK) 字體，支援的表意文字字符超過四萬。除了繁體中文會用到的 Big5 字集和香港需要的 HKSCS 字集，其他如日本專用的和製漢字（例子有「𩸽」、「峠」等）亦不缺，日語假名、韓國諺文等也一應俱全。</p>
-<p>昭源字體完整保留這些字碼支援，更收有思源字體沒有的新造字，包括剛在 2021 年納入《香港增補字符集》補編的「𫬷」、「𭉝」。</p>
-
-    </div>
-    <div>
-        
-        <img src="/images/coverage.png">
-    </div>
+<p>根據<a
+  class="gdoc-markdown__link"
+  href="/usage/download/"
+  title="取得字型"
+>取得字型</a>頁面的指示下載字體並解壓縮後，在相關字型的 <code>WEBFONT/</code> 目錄下就是可以用於網頁的昭源字體網頁字型。</p>
+<p>字體屬可變式字型格式，因此只需載入「正體」(<code>WEBFONT/css/vf.css</code>) 及「斜體」(<code>WEBFONT/css/vf-italic.css</code>) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。</p>
+<p>順帶一提，<code>WEBFONT/</code> 目錄內的 <code>demo/</code> 子目錄有兩個 HTML 檔案，分別使用正體和斜體字型印出所有網頁字型的覆蓋字元，作為應用示範。</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="2-npm">
+        2. NPM
+        <a data-clipboard-text="/usage/webfont/#2-npm" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 2. NPM" aria-label="跳到: 2. NPM" href="#2-npm">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
 </div>
-
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-ruler"></i></div>
-            <span>字重豐富，另備有斜體、Text 家族分支</span>
-        </h3>
-        <p>和思源字體一樣，昭源字體均備有最少七種字重，更有能精確地控制字形粗幼（粗細）的<strong>可變式字型 (Variable Font)</strong> 格式。</p>
-<p>此外，昭源字體並提供因應內文印刷而調整的 Text 家族分支和英數字元來自真正斜體而非由機械產生的 Italic 斜體字樣。</p>
-
-    </div>
-    <div>
-        
-        <img src="/images/weight.png">
-    </div>
+<p>本字體亦備有 npm 套件可供使用（<a
+  class="gdoc-markdown__link"
+  href="https://www.npmjs.com/package/chiron-sung-hk-webfont"
+  
+>宋體</a>，<a
+  class="gdoc-markdown__link"
+  href="https://www.npmjs.com/package/chiron-hei-hk-webfont"
+  
+>黑體</a>）。安裝方法如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安裝宋體字型</span>
+</span></span><span class="line"><span class="cl">npm install chiron-sung-hk-webfont 
+</span></span><span class="line"><span class="cl"><span class="c1"># 安裝黑體字型</span>
+</span></span><span class="line"><span class="cl">npm install chiron-hei-hk-webfont </span></span></code></pre></td></tr></table>
 </div>
-
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-candy-cane"></i></div>
-            <span>開放式授權，自由、開源、免費</span>
-        </h3>
-        採用 SIL Open Font License (OFL) 授權，印刷、網頁、應用程式、PDF 內嵌等等場合皆可免費使用。
-    </div>
-    <div>
-        
-        <img src="/images/ofl.png">
-    </div>
 </div>
+<p>然後就可以在適當位置載入樣式檔，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~chiron-sung-hk-webfont/css/vf.css&#39;</span><span class="p">;</span> <span class="o">//</span> <span class="nt">宋體正體</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~chiron-sung-hk-webfont/css/vf-italic.css&#39;</span><span class="p">;</span> <span class="o">//</span> <span class="nt">宋體斜體</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~chiron-hei-hk-webfont/css/vf.css&#39;</span><span class="p">;</span> <span class="o">//</span> <span class="nt">黑體正體</span>
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="s1">&#39;~chiron-hei-hk-webfont/css/vf-italic.css&#39;</span><span class="p">;</span>  <span class="o">//</span> <span class="nt">黑體斜體</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="3-cdn-jsdelivr">
+        3. CDN (jsDelivr)
+        <a data-clipboard-text="/usage/webfont/#3-cdn-jsdelivr" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 3. CDN (jsDelivr)" aria-label="跳到: 3. CDN (jsDelivr)" href="#3-cdn-jsdelivr">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>除了下載字型檔，網頁開發者也可以利用 <a
+  class="gdoc-markdown__link"
+  href="https://www.jsdelivr.com/"
+  
+>jsDelivr</a> 提供的免費 CDN 服務使用昭源黑體網頁字型。方法如下：</p>
+<ol>
+<li>前往要使用字體的 jsDelivr 網頁（<a
+  class="gdoc-markdown__link"
+  href="https://www.jsdelivr.com/package/npm/chiron-sung-hk-webfont?path=css"
+  
+>宋體</a>，<a
+  class="gdoc-markdown__link"
+  href="https://www.jsdelivr.com/package/npm/chiron-hei-hk-webfont?path=css"
+  
+>黑體</a>）。</li>
+<li>利用撥動開關圖示選擇要使用的檔案（<code>vf.css</code> / <code>vf-italic.css</code>）。使用者可以同時加入不同專案的 CSS 檔案，換言之可以同時將宋體、黑體的正體和斜體加入。</li>
+<li>按下 “SHOW &amp; CONFIGURE ALL LINKS” 按鈕，便會獲得 CSS 檔案的最佳化版本連結。<strong>注意：由於 CSS 會載入另一目錄下的字型檔，因此不能使用將所有選取 CSS 檔合併成單一檔案的連結，而須逐個檔案匯入</strong>。</li>
+<li>最後將有關連結加到網頁的 <code>&lt;link&gt;</code> 標籤，並在樣式表的 <code>font-family</code> 指定該字體的 <code>font-family</code> 即可。</li>
+</ol>
+<blockquote class="gdoc-hint warning">
+  免費 CDN 服務由 jsDelivr 提供，本人無法對此服務的穩定性或速度等問題提供任何協助。
+</blockquote>
 
-<hr>
-<div style="text-align: right">
-<a href="/usage/download/" class="btn">下載使用 &gt;</a>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="使用">
+        使用
+        <a data-clipboard-text="/usage/webfont/#使用" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 使用" aria-label="跳到: 使用" href="#%e4%bd%bf%e7%94%a8">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>以下是簡單用例。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 黑體的字體家族名稱是 &#34;Chiron Hei HK WS&#34; */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Chiron Sung HK WS&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* 指定字重。由於是 VF 字型，字重值可微調 */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="mi">310</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* 如有載入斜體 CSS 檔就可以在中英混排時使用真正的斜體英數字 */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* 通過 font-variation-settings 指定「字面調整」變化 */</span>
+</span></span><span class="line"><span class="cl">    <span class="n">font-variation-settings</span><span class="p">:</span> <span class="s2">&#34;PADG&#34;</span> <span class="mi">4</span><span class="p">;</span> <span class="c">/* 縮小 4% */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
+</div>
 </div>
 
   </article>
@@ -442,6 +1146,9 @@ media="all"
       
 
       
+        
+        
+      
 
       
     
@@ -479,6 +1186,9 @@ media="all"
       
       
 
+      
+        
+        
       
 
       
@@ -667,9 +1377,27 @@ media="all"
 
 
   <span class="gdoc-page__nav">
+    
+      <a
+        class="gdoc-page__nav--prev flex align-center"
+        href="/usage/formats/"
+        title="字型格式"
+      >
+        <i class="gdoc-icon">gdoc_arrow_left_alt</i>
+        字型格式
+      </a>
     
   </span>
   <span class="gdoc-page__nav">
+    
+      <a
+        class="gdoc-page__nav--next flex align-center"
+        href="/technical-details/motivation/"
+        title="創作背景"
+      >
+        創作背景
+        <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+      </a>
     
   </span>
 

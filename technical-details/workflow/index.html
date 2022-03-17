@@ -8,8 +8,17 @@
 <meta name="generator" content="Hugo 0.93.0" />
 
 
+  <meta name="description" content="昭源宋體會檢視所支援的字碼是否符合所屬意的式樣，如不符合會視情況修改。修改方法可以分為兩種：
+1. 變更映射 (Remap)     思源宋體是一套泛中日韓 (Pan-CJK) 字體，支援中、日、韓、港、台五地的字集和字形。如有字元須修改，而思源宋體另一地區的字形已經有符合昭源宋體所屬意的式樣，這時只須將字體字碼從香港字形改為其他地區的字形即可。這個動作稱為「更改映射」。
+2. 重繪字圖 (Redesign)     假如所有地區都沒有適用字形，就必須進行字圖重繪工作。重繪字圖時所用的字形組件均取自思源宋體。
+     【説明】
+（左）思源宋體日本版字圖
+（中）思源宋體台灣版字圖
+（右）昭源宋體字形   修改範圍     昭源字體是一個個人專案，而上游字體的收字量龐大，礙於人力所限，不可能逐一審視和修改思源字體超過四萬個中日韓字元。事實上，思源宋體和黑體的香港版，其符合《香港電腦漢字參考字形》的字形也僅限於 Big-5 及 HKSCS-2016 字碼表內的中文字。
+所以，昭源字體修改字形的正式支援範圍限於 Big-5 及 HKSCS-2016 字碼表內的中文字（支援意思是「會審視並考慮是否須作修改」，不等如一定會修改）。又因字形重繪比更改映射更花工夫，是否重繪一個支援範圍內的字元，會考慮一般字詞典是否有收、在社會是否常見常用等因素。另外，為增加可用作變更映射的字元，在判斷字形是否可用時，可能會忽略個別較為細微、但思源字體視為地區差異而將之區分的筆畫差異（例如某些筆畫的接觸與否）。
+至於 Big-5/HKSCS-2016 字表之外的中文字，並不屬於昭源字體的正式支援範圍。即使有重新映射或重繪等動作，最終字樣也不保證盡皆符合本字體所選定的筆形原則。換言之，假如該字碼不屬思源字體的支援範圍，輸出字樣不符本字體屬意式樣並不能算作 bug，使用時敬請留意。" />
 
-    <title>昭源字體</title>
+    <title>製作方法 | 昭源字體</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link
@@ -28,24 +37,75 @@
     
 
     
+  <meta
+    property="og:title"
+    content="製作方法"
+  />
   <meta property="og:site_name" content="昭源字體" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+  <meta property="og:description" content="昭源宋體會檢視所支援的字碼是否符合所屬意的式樣，如不符合會視情況修改。修改方法可以分為兩種：
+1. 變更映射 (Remap)     思源宋體是一套泛中日韓 (Pan-CJK) 字體，支援中、日、韓、港、台五地的字集和字形。如有字元須修改，而思源宋體另一地區的字形已經有符合昭源宋體所屬意的式樣，這時只須將字體字碼從香港字形改為其他地區的字形即可。這個動作稱為「更改映射」。
+2. 重繪字圖 (Redesign)     假如所有地區都沒有適用字形，就必須進行字圖重繪工作。重繪字圖時所用的字形組件均取自思源宋體。
+     【説明】
+（左）思源宋體日本版字圖
+（中）思源宋體台灣版字圖
+（右）昭源宋體字形   修改範圍     昭源字體是一個個人專案，而上游字體的收字量龐大，礙於人力所限，不可能逐一審視和修改思源字體超過四萬個中日韓字元。事實上，思源宋體和黑體的香港版，其符合《香港電腦漢字參考字形》的字形也僅限於 Big-5 及 HKSCS-2016 字碼表內的中文字。
+所以，昭源字體修改字形的正式支援範圍限於 Big-5 及 HKSCS-2016 字碼表內的中文字（支援意思是「會審視並考慮是否須作修改」，不等如一定會修改）。又因字形重繪比更改映射更花工夫，是否重繪一個支援範圍內的字元，會考慮一般字詞典是否有收、在社會是否常見常用等因素。另外，為增加可用作變更映射的字元，在判斷字形是否可用時，可能會忽略個別較為細微、但思源字體視為地區差異而將之區分的筆畫差異（例如某些筆畫的接觸與否）。
+至於 Big-5/HKSCS-2016 字表之外的中文字，並不屬於昭源字體的正式支援範圍。即使有重新映射或重繪等動作，最終字樣也不保證盡皆符合本字體所選定的筆形原則。換言之，假如該字碼不屬思源字體的支援範圍，輸出字樣不符本字體屬意式樣並不能算作 bug，使用時敬請留意。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/technical-details/workflow/" />
 
-
+<meta property="article:section" content="Technical Details" />
+    <meta
+      property="article:modified_time"
+      content="2022-03-16T22:03:14+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="" />
+<meta name="twitter:title" content="製作方法" />
+  <meta name="twitter:description" content="昭源宋體會檢視所支援的字碼是否符合所屬意的式樣，如不符合會視情況修改。修改方法可以分為兩種：
+1. 變更映射 (Remap)     思源宋體是一套泛中日韓 (Pan-CJK) 字體，支援中、日、韓、港、台五地的字集和字形。如有字元須修改，而思源宋體另一地區的字形已經有符合昭源宋體所屬意的式樣，這時只須將字體字碼從香港字形改為其他地區的字形即可。這個動作稱為「更改映射」。
+2. 重繪字圖 (Redesign)     假如所有地區都沒有適用字形，就必須進行字圖重繪工作。重繪字圖時所用的字形組件均取自思源宋體。
+     【説明】
+（左）思源宋體日本版字圖
+（中）思源宋體台灣版字圖
+（右）昭源宋體字形   修改範圍     昭源字體是一個個人專案，而上游字體的收字量龐大，礙於人力所限，不可能逐一審視和修改思源字體超過四萬個中日韓字元。事實上，思源宋體和黑體的香港版，其符合《香港電腦漢字參考字形》的字形也僅限於 Big-5 及 HKSCS-2016 字碼表內的中文字。
+所以，昭源字體修改字形的正式支援範圍限於 Big-5 及 HKSCS-2016 字碼表內的中文字（支援意思是「會審視並考慮是否須作修改」，不等如一定會修改）。又因字形重繪比更改映射更花工夫，是否重繪一個支援範圍內的字元，會考慮一般字詞典是否有收、在社會是否常見常用等因素。另外，為增加可用作變更映射的字元，在判斷字形是否可用時，可能會忽略個別較為細微、但思源字體視為地區差異而將之區分的筆畫差異（例如某些筆畫的接觸與否）。
+至於 Big-5/HKSCS-2016 字表之外的中文字，並不屬於昭源字體的正式支援範圍。即使有重新映射或重繪等動作，最終字樣也不保證盡皆符合本字體所選定的筆形原則。換言之，假如該字碼不屬思源字體的支援範圍，輸出字樣不符本字體屬意式樣並不能算作 bug，使用時敬請留意。" />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "昭源字體",
-      "url": "/",
-      "inLanguage": "en"
+      "@type": "TechArticle",
+      "articleSection": "Technical Details",
+      "name": "製作方法",
+      "url" : "/technical-details/workflow/",
+      "headline": "製作方法",
+      "description": "昭源宋體會檢視所支援的字碼是否符合所屬意的式樣，如不符合會視情況修改。修改方法可以分為兩種：\n1. 變更映射 (Remap)     思源宋體是一套泛中日韓 (Pan-CJK) 字體，支援中、日、韓、港、台五地的字集和字形。如有字元須修改，而思源宋體另一地區的字形已經有符合昭源宋體所屬意的式樣，這時只須將字體字碼從香港字形改為其他地區的字形即可。這個動作稱為「更改映射」。\n2. 重繪字圖 (Redesign)     假如所有地區都沒有適用字形，就必須進行字圖重繪工作。重繪字圖時所用的字形組件均取自思源宋體。\n     【説明】\n（左）思源宋體日本版字圖\n（中）思源宋體台灣版字圖\n（右）昭源宋體字形   修改範圍     昭源字體是一個個人專案，而上游字體的收字量龐大，礙於人力所限，不可能逐一審視和修改思源字體超過四萬個中日韓字元。事實上，思源宋體和黑體的香港版，其符合《香港電腦漢字參考字形》的字形也僅限於 Big-5 及 HKSCS-2016 字碼表內的中文字。\n所以，昭源字體修改字形的正式支援範圍限於 Big-5 及 HKSCS-2016 字碼表內的中文字（支援意思是「會審視並考慮是否須作修改」，不等如一定會修改）。又因字形重繪比更改映射更花工夫，是否重繪一個支援範圍內的字元，會考慮一般字詞典是否有收、在社會是否常見常用等因素。另外，為增加可用作變更映射的字元，在判斷字形是否可用時，可能會忽略個別較為細微、但思源字體視為地區差異而將之區分的筆畫差異（例如某些筆畫的接觸與否）。\n至於 Big-5\/HKSCS-2016 字表之外的中文字，並不屬於昭源字體的正式支援範圍。即使有重新映射或重繪等動作，最終字樣也不保證盡皆符合本字體所選定的筆形原則。換言之，假如該字碼不屬思源字體的支援範圍，輸出字樣不符本字體屬意式樣並不能算作 bug，使用時敬請留意。",
+      "wordCount" : "30",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "/technical-details/workflow/"
+      },
+      "copyrightHolder" : "昭源字體",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
+      "dateModified": "2022-03-16T22:03:14.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "昭源字體",
+          "url": "/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
   }
   </script>
 
@@ -95,7 +155,7 @@ as="style"
         href="/custom.css"
 media="all"
 />
-<link href="/" rel="canonical" type="text/html" />
+<link href="/technical-details/workflow/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -142,6 +202,19 @@ media="all"
       
       <header class="gdoc-header">
     <div class="container flex align-center justify-between">
+        
+        <label for="menu-control" class="gdoc-nav__control" tabindex="0">
+            <i class="fa-solid fa-bars icon gdoc_menu"></i>
+
+
+
+
+            <i class="fa-solid fa-arrow-left icon gdoc_arrow_back"></i>
+
+
+
+
+        </label>
         
         <div>
             <a class="gdoc-brand gdoc-header__link" href="/">
@@ -235,6 +308,562 @@ media="all"
 
       <main class="container flex flex-even">
         
+          <aside class="gdoc-nav">
+            <nav>
+  
+
+
+
+  <section class="gdoc-nav--main">
+    <h2>目錄</h2>
+    
+      
+
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/download/
+                "
+                class="gdoc-nav__entry"
+              >
+                取得字型
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          <span class="flex">使用説明</span>
+        
+
+        
+          
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/formats/
+                "
+                class="gdoc-nav__entry"
+              >
+                字型格式
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /usage/webfont/
+                "
+                class="gdoc-nav__entry"
+              >
+                網頁字型
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          <span class="flex">技術細節</span>
+        
+
+        
+          
+  
+  
+
+
+  <ul class="gdoc-nav__list">
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/motivation/
+                "
+                class="gdoc-nav__entry"
+              >
+                創作背景
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/workflow/
+                "
+                class="gdoc-nav__entry is-active"
+              >
+                製作方法及修改範圍
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/source-han-fonts-differences/
+                "
+                class="gdoc-nav__entry"
+              >
+                與思源字體的差異
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/chiron-sans-fonts-differences/
+                "
+                class="gdoc-nav__entry"
+              >
+                昭源黑體版本説明
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /technical-details/source-han-sans-2/
+                "
+                class="gdoc-nav__entry"
+              >
+                附錄：思源黑體 2.0 介紹
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /license/
+                "
+                class="gdoc-nav__entry"
+              >
+                授權
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /faq/
+                "
+                class="gdoc-nav__entry"
+              >
+                常見問題
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+      
+      
+
+
+      <li>
+        
+        
+          
+          
+          
+          
+          
+          
+          
+
+
+          <input
+            type="checkbox"
+            
+              class="hidden"
+            
+          />
+          <label
+            
+          >
+            <span class="flex">
+              
+              <a
+                href="
+                  /donate/
+                "
+                class="gdoc-nav__entry"
+              >
+                支持/贊助
+              </a>
+            </span>
+            
+          </label>
+        
+
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+    
+  </section>
+
+  
+
+
+  <section class="gdoc-nav--more">
+    
+  </section>
+</nav>
+
+          </aside>
+        
 
 
         <div class="gdoc-page content">
@@ -265,86 +894,54 @@ media="all"
 
 
   <article
-    class="gdoc-markdown gdoc-markdown__align--left cover-page"
+    class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1></h1>
-    <div class="gdoc-page__anchorwrap">
-    <h1 id="昭源宋體昭源黑體brspan-langenchiron-sung-hk-and-chiron-hei-hkspan">
-        昭源宋體、昭源黑體<br/><span lang="en">Chiron Sung HK <em>and</em> Chiron Hei HK</span>
-    </h1>
-</div>
-<p class="subtitle">現代筆形風格、平衡標準字形和印刷體慣用筆形的免費開源字型</p>
-<p><a href="#" class="btn preview-trigger"><i class="fa-solid fa-vial"></i>試試看</a>
-<a href="/usage/download/" class="btn"><i class="fa-solid fa-download"></i>下載使用</a></p>
+    <h1>製作方法</h1>
+    <p>昭源宋體會檢視所支援的字碼是否符合所屬意的式樣，如不符合會視情況修改。修改方法可以分為兩種：</p>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="特色">
-        特色
+    <h2 id="1-變更映射-remap">
+        1. 變更映射 (Remap)
+        <a data-clipboard-text="/technical-details/workflow/#1-變更映射-remap" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 1. 變更映射 (Remap)" aria-label="跳到: 1. 變更映射 (Remap)" href="#1-%e8%ae%8a%e6%9b%b4%e6%98%a0%e5%b0%84-remap">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
     </h2>
 </div>
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-users"></i></div>
-            <span>現代筆形設計，兼顧印刷體架構</span>
-        </h3>
-        「昭源黑體」以「思源黑體香港版」為基礎，參考繁體中文地區的商用字體作出修改，目標是提供一個正體中文標準、地區中立、採用現代筆形風格而兼顧標準字形和印刷體架構的開源字體方案。
-    </div>
-    <div>
-        
-        <img src="/images/modern.png">
-    </div>
+<p>思源宋體是一套泛中日韓 (Pan-CJK) 字體，支援中、日、韓、港、台五地的字集和字形。如有字元須修改，而思源宋體另一地區的字形已經有符合昭源宋體所屬意的式樣，這時只須將字體字碼從香港字形改為其他地區的字形即可。這個動作稱為「更改映射」。</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="2-重繪字圖-redesign">
+        2. 重繪字圖 (Redesign)
+        <a data-clipboard-text="/technical-details/workflow/#2-重繪字圖-redesign" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 2. 重繪字圖 (Redesign)" aria-label="跳到: 2. 重繪字圖 (Redesign)" href="#2-%e9%87%8d%e7%b9%aa%e5%ad%97%e5%9c%96-redesign">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
 </div>
+<p>假如所有地區都沒有適用字形，就必須進行字圖重繪工作。重繪字圖時所用的字形組件均取自思源宋體。</p>
 
-<div class="feature">
+<figure class="comparison">
     <div>
-        <h3>
-            <div><i class="fa-solid fa-code-pull-request"></i></div>
-            <span>收字繁多，香港字支援充足</span>
-        </h3>
-        <p>思源字體是一款泛中日韓 (Pan-CJK) 字體，支援的表意文字字符超過四萬。除了繁體中文會用到的 Big5 字集和香港需要的 HKSCS 字集，其他如日本專用的和製漢字（例子有「𩸽」、「峠」等）亦不缺，日語假名、韓國諺文等也一應俱全。</p>
-<p>昭源字體完整保留這些字碼支援，更收有思源字體沒有的新造字，包括剛在 2021 年納入《香港增補字符集》補編的「𫬷」、「𭉝」。</p>
+        <div>
+            <img src="/technical-details/workflow/redesign.svg">
+        </div>
+    </div>
+    <figcaption>
+        【説明】<br>
+（左）思源宋體日本版字圖<br>
+（中）思源宋體台灣版字圖<br>
+（右）昭源宋體字形
+    </figcaption>
+</figure>
 
-    </div>
-    <div>
-        
-        <img src="/images/coverage.png">
-    </div>
+<div class="gdoc-page__anchorwrap">
+    <h1 id="修改範圍">
+        修改範圍
+        <a data-clipboard-text="/technical-details/workflow/#修改範圍" class="gdoc-page__anchor gdoc-page__anchor--right clip" title="跳到: 修改範圍" aria-label="跳到: 修改範圍" href="#%e4%bf%ae%e6%94%b9%e7%af%84%e5%9c%8d">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
 </div>
-
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-ruler"></i></div>
-            <span>字重豐富，另備有斜體、Text 家族分支</span>
-        </h3>
-        <p>和思源字體一樣，昭源字體均備有最少七種字重，更有能精確地控制字形粗幼（粗細）的<strong>可變式字型 (Variable Font)</strong> 格式。</p>
-<p>此外，昭源字體並提供因應內文印刷而調整的 Text 家族分支和英數字元來自真正斜體而非由機械產生的 Italic 斜體字樣。</p>
-
-    </div>
-    <div>
-        
-        <img src="/images/weight.png">
-    </div>
-</div>
-
-<div class="feature">
-    <div>
-        <h3>
-            <div><i class="fa-solid fa-candy-cane"></i></div>
-            <span>開放式授權，自由、開源、免費</span>
-        </h3>
-        採用 SIL Open Font License (OFL) 授權，印刷、網頁、應用程式、PDF 內嵌等等場合皆可免費使用。
-    </div>
-    <div>
-        
-        <img src="/images/ofl.png">
-    </div>
-</div>
-
-<hr>
-<div style="text-align: right">
-<a href="/usage/download/" class="btn">下載使用 &gt;</a>
-</div>
+<p>昭源字體是一個個人專案，而上游字體的收字量龐大，礙於人力所限，不可能逐一審視和修改思源字體超過四萬個中日韓字元。事實上，思源宋體和黑體的香港版，其符合《香港電腦漢字參考字形》的字形也僅限於 Big-5 及 HKSCS-2016 字碼表內的中文字。</p>
+<p>所以，昭源字體修改字形的正式支援範圍限於 Big-5 及 HKSCS-2016 字碼表內的中文字（支援意思是「會審視並考慮是否須作修改」，不等如一定會修改）。又因字形重繪比更改映射更花工夫，是否重繪一個支援範圍內的字元，會考慮一般字詞典是否有收、在社會是否常見常用等因素。另外，為增加可用作變更映射的字元，在判斷字形是否可用時，可能會忽略個別較為細微、但思源字體視為地區差異而將之區分的筆畫差異（例如某些筆畫的接觸與否）。</p>
+<p>至於 Big-5/HKSCS-2016 字表之外的中文字，並不屬於昭源字體的正式支援範圍。即使有重新映射或重繪等動作，最終字樣也不保證盡皆符合本字體所選定的筆形原則。換言之，假如該字碼不屬思源字體的支援範圍，輸出字樣不符本字體屬意式樣並不能算作 bug，使用時敬請留意。</p>
 
   </article>
 
@@ -506,6 +1103,9 @@ media="all"
       
 
       
+        
+        
+      
 
       
     
@@ -527,6 +1127,9 @@ media="all"
       
       
 
+      
+        
+        
       
 
       
@@ -667,9 +1270,27 @@ media="all"
 
 
   <span class="gdoc-page__nav">
+    
+      <a
+        class="gdoc-page__nav--prev flex align-center"
+        href="/technical-details/motivation/"
+        title="創作背景"
+      >
+        <i class="gdoc-icon">gdoc_arrow_left_alt</i>
+        創作背景
+      </a>
     
   </span>
   <span class="gdoc-page__nav">
+    
+      <a
+        class="gdoc-page__nav--next flex align-center"
+        href="/technical-details/source-han-fonts-differences/"
+        title="與思源字體的差異"
+      >
+        與思源字體的差異
+        <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+      </a>
     
   </span>
 

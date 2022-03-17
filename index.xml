@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>昭源字體</title>
+    <link>/</link>
+    <description>Recent content on 昭源字體</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/usage/advanced/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/usage/advanced/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>取得字型</title>
+      <link>/usage/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/usage/download/</guid>
+      <description>下載     昭源宋體和黑體的字型檔案均放置於 Github 提供的檔案庫。按下「下載」按鈕後，瀏覽器會進入本專案在 Github 的 Releases 頁面。確認版本和內容後即可按在 Assets 附件區的 Source code (zip) 或 Source code (tar.gz) 按鈕下載字型文件。
+ 昭源宋體 Chiron Sung HK v1.001 (2022-03-16)    下載   Github      昭源黑體 Chiron Hei HK v2.099 預覽版本 (2022-03-16) 注意: Chiron Hei HK 跟之前發表的 Chiron Sans HK 不完全相同。原有專案（Chiron Sans HK 及 Chiron Sans HK Pro）之後會以「昭源黑體（Chiron Hei HK，沿用中文名稱但英文字體名稱不同，亦不再區分 Pro 版）」的形式作後續更新，以跟「昭源宋體 (Chiron Sung HK)」有更佳對應。更多詳情請參閲昭源黑體版本説明頁。    下載   Github      使用     下載後請按照所使用作業系統的步驟，將字型安裝至系統中。視乎所使用的格式，字型名稱或會有所不同。詳情請參閲字型格式頁。</description>
+    </item>
+    
+    <item>
+      <title>字型格式</title>
+      <link>/usage/formats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/usage/formats/</guid>
+      <description>安裝前，請先確認已經將所下載的發佈檔案（.zip 或 .tar.gz 副檔名）進行解壓縮。解壓縮後的子目錄存放了不同格式的字型檔案，簡介如下：
+   目錄 內容     OTF/ 桌面用 OTF (OpenType) 字型   TTF/ 桌面用 TTF (TrueType) 字型   VAR/ 桌面用可變式字型 (Variable Font)   WEBFONT/ 網頁字型   resources/ 其他非字型檔案       桌面用 OpenType 格式字型 桌面用 TrueType 格式字型 可變式字型 網頁字型 其他      桌面用 OpenType 格式字型     OTF/ 目錄內的是 OpenType/CFF 格式的 OTF 字型，副檔名為 .</description>
+    </item>
+    
+    <item>
+      <title>常見問題</title>
+      <link>/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/faq/</guid>
+      <description>是否所有思源字體所收字碼都有遵照昭源字體的製作方針調整字形？ 這樣修改思源黑體會不會有侵權問題？ 為甚麼安裝後的字型只有英文名稱？ 為甚麼會有新造字？可以提出新造字要求嗎？ 昭源字體是否只適用於香港，不適用於台灣？ 應該如何回報錯誤？      是否所有思源字體所收字碼都有遵照昭源字體的製作方針調整字形？     思源字體包含超過 44,000 個中日韓表意文字字符，其香港版遵從《參考字形》的字碼限於 Big5 和 HKSCS-2016 碼表中約 18,000 多字。Big5 碼（大五碼）是台灣電腦廠商在八十年代研發的中文電腦系統的字符編碼標準，亦係香港在踏入 Unicode 時代之前的事實標準，但當中的收字未能滿足香港社會需要。因此，到了九十年代，香港以 Big5 碼為基礎，在此之上發展出一套「香港增補字符集」(HKSCS) 以照顧香港用戶需要。可以説，Big5 加 HKSCS 涵蓋了九成九香港人日常會用到的字符（為簡潔起見這裏以「香港字符集」概稱之）。
+正如「製作方法及修改範圍」所述，修改字形有「更改映射」和「重繪字圖」兩種辦法。更改映射容易，重繪字圖則須較多時間和精力。昭源字體是我在工餘時間製作和維護的專案，在人力和時間上都不容許我將「香港字符集」中全部不符本字體製作方針的字形都改成個人心儀的樣式，遑論原字體中「香港版」支援範圍之外、不屬「香港字符集」的字碼。因此，原則上，「昭源字體」的審視和修改範圍限於「香港字符集」中的字碼。
+在原版昭源黑體的製作初期，只有常用字會進行字形重繪工序，其餘則先以其他地區的近似字形暫代或保留不動。後來，重繪字形工序才慢慢擴展至次常用字以至非常用字。昭源黑體專案至今超過兩年，應該只餘下一些罕用甚至連一般字典也不收的「死字」未作修改，相信足以應付日常使用需要。昭源宋體則沒有採用「用其他地區近似字形暫代/保留不動」的做法，在初版發佈時其「香港字符集」中的修改字樣數目已大致跟昭源黑體看齊。
+昭源字體主要針對現代應用，所以雖然好些「香港字符集」的字未作修改，但反而有重繪好些「香港字符集」之外的字形，例如糀、峠等。這都是考慮到這些字在社會上的使用情況，算是特例。
+假如發現「香港字符集」之內應改而本字體未改的常用字，歡迎提出。
+這樣修改思源黑體會不會有侵權問題？     思源字體採用 SIL Open Font License (OFL) 授權，是一款免費、自由、開源的字體。授權條款容許修改原字體然後用其他名稱發表的「二次創作」做法。
+昭源字體中用作修改和增加字模的部件完全來自思源字體本身，不牽涉其他字體。所以，昭樣字體的製作和發佈，完全在思源字體授權條款的允許範圍之內。
+這裏有關修改思源字體的合法性純屬概括性的説明，略過了應該如何修改以符合 OFL 授權原則的技術性問題（例如須保留原字體版權資訊、修改字體檔內的 Reserved Font Name 之類）。請勿將本文視為第三方修改思源字體的法律意見。  OFL 要求衍生字體使用相同的授權，換言之本字體亦採用 OFL 授權，亦即所以其他人也可以修改本字體，然後用其他名稱發表。
+為甚麼安裝後的字型只有英文名稱？     主因有兩個：</description>
+    </item>
+    
+    <item>
+      <title>授權</title>
+      <link>/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/license/</guid>
+      <description>昭源宋體及黑體以 SIL OPEN FONT LICENSE Version 1.1（SIL 開放字型授權版本 1.1，簡稱 SIL OFL 或 OFL）條款授權。
+這個授權的自由度甚高，例如可將字型作以下的個人或商業用途，費用全免：
+ 圖片或影片製作、書籍出版 PDF 內嵌，甚至內嵌於作業系統、電子裝置 在網頁使用 附載於其他軟件或應用程式，包括手機 APP（但須保留版權聲明）  OFL 禁止的主要是明顯損害原作者著作權益的行為，例如拿原作者提供免費下載使用的 OFL 字體單獨販售 ，或只改了個字體名稱就當成自己出品等。留意本文不構成任何法律意見，請以官方授權原文為準。
+OFL 授權網站另有常見問題頁面解釋不同使用情況下的授權範圍。
+Copyright 2014-2022 Tamcy, with Reserved Font Name &amp;#39;Chiron&amp;#39;. Copyright 2014-2022 Adobe (http://www.adobe.com/), with Reserved Font Name &amp;#39;Source&amp;#39;. Source is a trademark of Adobe in the United States and/or other countries. This Font Software is licensed under the SIL Open Font License, Version 1.</description>
+    </item>
+    
+    <item>
+      <title>支持/贊助</title>
+      <link>/donate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/donate/</guid>
+      <description>「昭源黑體」和「昭源黑體 Pro」均屬個人開發的字型產品，完全免費。假如滿意我對「思源黑體」所做的修改工作，而想表達心意或支持，歡迎通過 Paypal.me 捐助本人，金額不拘，先此致謝！
+透過 Paypal.me 捐款</description>
+    </item>
+    
+    <item>
+      <title>昭源黑體版本説明</title>
+      <link>/technical-details/chiron-sans-fonts-differences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/technical-details/chiron-sans-fonts-differences/</guid>
+      <description>本頁是為曾經使用舊版昭源黑體 (Chiron Sans HK)，卻發現在本網頁的新版本使用了另一個發佈名稱 Chiron Sans HK 而感到困惑的使用者而寫。初接觸本字體的使用者請使用本網頁介紹的昭源黑體 (Chiron Hei HK) 即可。  昭源字體一直是以思源字體的最新版本為基礎製作。但由於我是外部人士，對製作方更新字體的規劃和動向並不清楚，所以當上游之體有重大調整時，就不得不對構建昭源字體的工具組作相應調整。本頁會簡略介紹我曾經以「昭源」為名發表的黑體字型及其創作背景。
+   昭源甄黑體 (CYanHeiHK) 昭源黑體 (Chiron Sans HK) 昭源黑體 Pro (Chiron Sans HK Pro) 昭源黑體 (Chiron Hei HK)      昭源甄黑體 (CYanHeiHK)     思源黑體初版 (v1.000) 在 2014 年 7 月 發表，當時的繁體中文版是根據台灣教育部「國字標準字體」（簡稱台標）所制定的筆形製作（第一版字體名稱是 TWHK，之後才更名為 TW）。雖然製作方其後答應另外增設符合香港需求的「香港版」字型，但由於有關方面決定等香港政府發表新一版的《香港增補字符集》後再作出對應，所以在當時，此一「思源黑體香港版」要到何時才能面世，實屬未知之數。
+不過，一如創作背景所述，而我個人屬意的是日常慣見的商業字體字樣（因為商業字體一般會在官方標準和審美間取得平衡），因此在「思源黑體香港版」出現之前，我就以「思源黑體台灣版」為底本修改成昭源甄黑體 (CYanHeiHK)，並在 2016 年發表。
+昭源甄黑體的特性如下：
+ 基於思源黑體 v1.00x 台灣版改造 字體家族名稱為 CYanHeiHK 提供三款字重，分別是 Light, Regular 和 Bold 網頁字型版本收約 8,010 字元，每款字重佔 1.</description>
+    </item>
+    
+    <item>
+      <title>網頁字型</title>
+      <link>/usage/webfont/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/usage/webfont/</guid>
+      <description>昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
+網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。
+網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
+字體屬可變式字型格式，因此只需載入「正體」(WEBFONT/css/vf.css) 及「斜體」(WEBFONT/css/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。</description>
+    </item>
+    
+    <item>
+      <title>關於</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>昭源宋體 (Chiron Sung HK) 和昭源黑體 (Chiron Hei HK) 均為採用現代筆形風格、平衡標準字形和印刷體慣用筆形的免費開源黑體字型。
+特色     照顧正體中文環境需要     「昭源黑體」以「思源黑體香港版」為基礎，參考繁體中文地區的商用字體作出修改，目標是提供一個兼顧標準字形和印刷體架構的開源字體方案。
+站在巨人肩膊之上，收字繁多     思源黑體是一款泛中日韓 (Pan-CJK) 字體，支援的表意文字字符超過四萬，平假片假名、諺文等也一應俱全。昭源黑體除完整保留這些字碼支援外，還收有思源黑體沒有的新造字。
+字重豐富，配搭方便     提供豐富字重讓使用者自由選擇是思源黑體的一大特色。為了提供與思源黑體一致的配搭彈性，昭源黑體所有修改或新造字形都做齊七款字重，現在更備有可變式字型格式。
+用途廣泛，完全免費     提供 OTF、TTF、網頁字型格式，並採用 SIL Open Font License (OFL) 授權，印刷、網頁、應用程式、PDF 內嵌等等場合皆可免費使用。</description>
+    </item>
+    
+    <item>
+      <title>附錄：思源黑體 2.0 介紹</title>
+      <link>/technical-details/source-han-sans-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/technical-details/source-han-sans-2/</guid>
+      <description>本文在 2019 年 4 月寫成，並投稿至《立場新聞》，原稿題為〈思源黑體 2.0⸺加入香港地區字形支援的重大更新〉。由於當中有關思源字體的製作背景也可幫助使用者了解昭源字體，故略作修改後附載於此。  2014 年 7 月，思源黑體正式發表。這款字體不特收字多、提供七種粗幼，更支援繁體（正體）中文、簡體中文、日文、韓文四個語系的書寫系統，加上完全免費、授權自由，一推出便瞬即吸引漢字文化圈大眾目光，並獲得廣泛報道。雖然這款字體的繁體中文版本是根據台灣教育部「國字標準字體」（簡稱台標）所制定的筆形製作，當中的字形未必符合香港慣用寫法，大眾仍樂於使用，現在這款字體在香港可謂隨處可見。
+事隔四年，思源黑體在 2018 年 11 月迎來第一次重大更新，推出 2.000 版。更新重點之一是將本來的繁體中文版拆分成「台灣」和「香港」兩個版本，香港版字型名為「Source Han Sans HC/思源黑體 香港」，當中的字形是遵照香港標準製作（Source Han Sans TC/思源黑體仍是台標版，名稱不變）。這個版本對香港使用者來説其實甚具意義，只是可能因為新版在技術上不如初版般震撼，對其他地區用戶影響又不大，以致相關報道不多。所以趁着思源黑體 2.001 版更新推出不久，寫下這篇文章，介紹一下這個新版的思源黑體。
+1. 温故知新：「思源黑體」簡介     思源黑體是 Adobe 和 Google 兩家公司合作開發的泛中日韓字型產品。Adobe 本身有以 “Source” 為名的英文開源字體，如 “Source Sans Pro”、“Source Serif Pro” 之類；Google 也有一系列以 “Noto” 為名的多語系開源字體，例如英文的 “Noto Sans”、希伯來文的 ”Noto Serif Hebrew” 等等（大多由 Monotype 蒙納製作）。到了中日韓字體，Google 選擇與 Adobe 合作，共同開發，再將成品各自以自己的品牌推出，以配合他們本身的開源字體家族產品線。
+Google 的版本以 Noto Sans CJK 為家族名稱，並以語系代碼為符合各地寫法的字型命名。例如台灣繁體中文版字型名為 Noto Sans CJK TC（TC 本來是繁體中文，沒有地區之分，採用台灣寫法，但為保持兼容性應該不會修改）、新增的香港版名為 Noto Sans CJK HK、日本版名為 Noto Sans CJK JP。</description>
+    </item>
+    
+  </channel>
+</rss>
