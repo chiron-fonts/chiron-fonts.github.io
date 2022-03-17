@@ -1,7 +1,7 @@
 $(window).on('load', function () {
 
     var showFontPreviewDialog = function() {
-        $('#font-preview-dialog').addClass('show');
+        $('#font-preview-dialog').css('top', window.scrollY).addClass('show');
         $('html').css('overflow', 'hidden');
     };
 
