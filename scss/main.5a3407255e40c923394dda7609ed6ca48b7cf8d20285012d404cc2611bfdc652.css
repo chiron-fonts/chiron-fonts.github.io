@@ -334,7 +334,7 @@ figure.comparison figcaption {
   padding: 1rem 1.3rem;
 }
 .download-item dl.chiron-sung-hk h5 {
-  font-family: "Chiron Sung HK";
+  font-family: "Chiron Sung HK WS";
 }
 @media (prefers-color-scheme: dark) {
   :root:not([color-mode=light]):not([color-mode=dark]) .download-item dl {
