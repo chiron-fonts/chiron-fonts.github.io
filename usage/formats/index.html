@@ -5,7 +5,7 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.93.0" />
+<meta name="generator" content="Hugo 0.93.2" />
 
 
   <meta name="description" content="安裝前，請先確認已經將所下載的發佈檔案（.zip 或 .tar.gz 副檔名）進行解壓縮。解壓縮後的子目錄存放了不同格式的字型檔案，簡介如下：
@@ -43,7 +43,7 @@
 <meta property="article:section" content="Usage" />
     <meta
       property="article:modified_time"
-      content="2022-03-15T18:56:59+08:00"
+      content="2022-03-18T10:24:28+08:00"
     />
 
 
@@ -62,7 +62,7 @@
       "url" : "/usage/formats/",
       "headline": "字型格式",
       "description": "安裝前，請先確認已經將所下載的發佈檔案（.zip 或 .tar.gz 副檔名）進行解壓縮。解壓縮後的子目錄存放了不同格式的字型檔案，簡介如下：\n   目錄 內容     OTF\/ 桌面用 OTF (OpenType) 字型   TTF\/ 桌面用 TTF (TrueType) 字型   VAR\/ 桌面用可變式字型 (Variable Font)   WEBFONT\/ 網頁字型   resources\/ 其他非字型檔案       桌面用 OpenType 格式字型 桌面用 TrueType 格式字型 可變式字型 網頁字型 其他      桌面用 OpenType 格式字型     OTF\/ 目錄內的是 OpenType\/CFF 格式的 OTF 字型，副檔名為 .",
-      "wordCount" : "239",
+      "wordCount" : "242",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -73,7 +73,7 @@
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2022-03-15T18:56:59.00Z",
+      "dateModified": "2022-03-18T10:24:28.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "昭源字體",
@@ -161,7 +161,7 @@ media="all"
 
 
 
-<link rel="stylesheet" href="/scss/main.5a3407255e40c923394dda7609ed6ca48b7cf8d20285012d404cc2611bfdc652.css" integrity="sha256-WjQHJV5AySM5Tdp2Ce1spIt8&#43;NIChQEtQEzCYRv9xlI=">
+<link rel="stylesheet" href="/scss/main.1ff2153347f4acbd3effd92d7db1b2dce6887298e9db51aa48e67fa8b4e6d0bc.css" integrity="sha256-H/IVM0f0rL0&#43;/9ktfbGy3OaIcpjp21GqSOZ/qLTm0Lw=">
 
   </head>
 
@@ -1027,7 +1027,7 @@ media="all"
 <p><code>TTF/</code> 目錄內放有 TrueType 格式字型，副檔名是 <code>.ttf</code>，其餘命名方式、安裝後的字型名稱等跟 OpenType 格式相同。使用者只能安裝同一字體配置的其中一種格式到同一系統中。</p>
 <blockquote class="gdoc-hint warning">
   <p>OpenType 與 TrueType 屬字體格式之別。OpenType 字型格式由 Adobe 開發，早年與 TrueType 格式相競爭。思源字體同樣由 Adobe 開發，組建思源字體的工具鏈也是主要由 Adobe 提供。至此相信不難理解為何組建思源字體的輸出目標格式是 OpenType 而非 TrueType。</p>
-<p>而昭源宋體屬於思源字體的衍生專案，使用的也是組建思源字體的工具，是故其原生格式也是 OpenType。</p>
+<p>而昭源字體屬於思源字體的衍生專案，使用的也是組建思源字體的工具，是故其原生格式也是 OpenType。</p>
 <p>但另一方面，某些作業系統、應用程式對 TrueType 字型有較佳兼容性。所以，本字體嘗試提供由 OpenType 格式轉換得來的 TrueType 字型版本，供使用者在遇到問題時嘗試切換使用。</p>
 <p>TrueType 檔是經轉換而成，非字體原生格式，亦未經詳細測試，是否能以之為 OpenType 格式的替代方案尚待證實，使用時敬請留意。</p>
 
@@ -1041,18 +1041,25 @@ media="all"
         </a>
     </h2>
 </div>
-<p><code>VAR/</code> 目錄下收錄的是昭源宋體的可變式字型 (Variable Font, 簡稱 VF)，檔案有兩個，一個是「正體」，另一個檔名有 <code>It</code> 者是「斜體」。VF 格式除了可以在單一書體檔案內涵蓋之前 OTF/TTF 版本提到的所有「字重」和 “Text” 字面率之外，還可以對這些參數作出更細緻的調整。</p>
+<p><code>VAR/</code> 目錄下收錄的是昭源字體的可變式字型 (Variable Font, VF)，檔案有兩個，一個是「正體」，另一個檔名有 <code>It</code> 者是「斜體」。VF 格式除了可以在單一書體檔案內涵蓋之前 OTF/TTF 版本提到的所有「字重」和 “Text” 字面率之外，還可以對這些參數作出更細緻的調整。</p>
+<blockquote class="gdoc-hint danger">
+  <strong>測試所得，Windows 10 在安裝 21H2 更新後仍未能正常支援 OpenType/CFF2 格式（副檔名為 <code>.otf</code>）的 VF 格式檔案。雖然能夠安裝，但在個別軟件（例如記事本）只要一選擇相關字體便會即時導致系統的字型渲染引擎崩潰、整個系統的字型顯示出現異常而必須重新啟動的致命錯誤。遇此情況請改用 <code>.ttf</code> 版本（<a
+  class="gdoc-markdown__link"
+  href="https://github.com/adobe-fonts/source-han-sans/issues/290"
+  
+>相關 Github Issue</a>）。Windows 11 則尚未發現此情形。</strong>
+</blockquote>
+
 <p>昭源字體的 VF 字型檔定義了以下變化軸：</p>
 <ul>
 <li>Weight (wght)：字重軸，與思源宋體相同，數值在 250 至 900 之間。</li>
-<li>Padding (PADG)：即昭源宋體新增的「字面調整」變化，預設值 0 代表無縮放，1 代表字元縮小約 0.5%，最大值為 10 即縮小約 5%。OTF 字型檔的 “Text” 分支縮放率等同本軸的 “6”，即縮小約 3%。</li>
+<li>Padding (PADG)：即昭源字體新增的「字面調整」變化，預設值 0 代表無縮放，1 代表字元縮小約 0.5%，最大值為 10 即縮小約 5%。OTF 字型檔的 “Text” 分支縮放率等同本軸的 “6”，即縮小約 3%。</li>
 </ul>
 <p>備註：</p>
 <ul>
 <li>非官方定義的變化軸名稱須用全大寫，因此字重軸和字面調整軸名稱會有大小寫的不同。</li>
 <li>可變式字型屬新技術，有賴作業系統和軟件二者支援方能正常運作，否則會出現異常情況，例如不能安裝、安裝後只看到一個字重、字體名稱無法顯示之類。一些可以使用 VF 的軟件也可能只提供有限度支援，例如只提供字體本身定義好的樣式（本字體而言是兩個分支加八個字重），不容許對個別參數軸進行微調。</li>
 <li>又因 VF 格式不受之前 OTF、TTF 格式的字型名稱長度限制，所以字重名稱會沿用長寫，不作縮略。</li>
-<li><strong>測試所得，Windows 10 在安裝 21H2 更新後仍未能正常支援 OpenType/CFF2 格式（副檔名為 <code>.otf</code>）的 VF 格式檔案。雖然能夠安裝，但在個別軟件（例如記事本）只要一選擇相關字體便會即時導致系統的字型渲染引擎崩潰、整個系統的字型顯示出現異常而必須重新啟動的致命錯誤。遇此情況，請改用 <code>.ttf</code> 版本。</strong></li>
 </ul>
 <div class="gdoc-page__anchorwrap">
     <h2 id="網頁字型">
@@ -1078,7 +1085,7 @@ media="all"
 <p><code>resources/</code> 目錄內的都是供參考用的文件檔：</p>
 <ul>
 <li><code>metadata.json</code>：字體屬性概覽，屬 JSON 格式。</li>
-<li><code>UpstreamDifferences.pdf</code>：昭源字體與上游（思源）字體的差異比較文件（PDF 格式）。</li>
+<li><code>UpstreamDifferences.pdf</code>：昭源與上游（思源）字體的差異比較文件（PDF 格式）。</li>
 </ul>
 
   </article>

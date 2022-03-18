@@ -324,11 +324,34 @@ figure.comparison figcaption {
   font-weight: 300;
 }
 
-.download-item dl {
+.download-item {
   background-color: var(--panel-background-color);
   border-radius: 0.25rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
   color: #4a4a4a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([color-mode=light]):not([color-mode=dark]) .download-item {
+    color: white;
+  }
+  :root:not([color-mode=light]):not([color-mode=dark]) .download-item img {
+    filter: brightness(0) contrast(1) invert(1) !important;
+  }
+}
+:root[color-mode=dark] .download-item {
+  color: white;
+}
+:root[color-mode=dark] .download-item img {
+  filter: brightness(0) contrast(1) invert(1) !important;
+}
+
+.download-item div {
+  margin: 0 1.3rem;
+  padding: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.download-item dl {
   display: flex;
   align-items: flex-start;
   padding: 1rem 1.3rem;
@@ -336,21 +359,9 @@ figure.comparison figcaption {
 .download-item dl.chiron-sung-hk h5 {
   font-family: "Chiron Sung HK WS";
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([color-mode=light]):not([color-mode=dark]) .download-item dl {
-    color: white;
-  }
-  :root:not([color-mode=light]):not([color-mode=dark]) .download-item dl img {
-    filter: brightness(0) contrast(1) invert(1) !important;
-  }
+.download-item dl:not(:last-child) {
+  padding-bottom: 0;
 }
-:root[color-mode=dark] .download-item dl {
-  color: white;
-}
-:root[color-mode=dark] .download-item dl img {
-  filter: brightness(0) contrast(1) invert(1) !important;
-}
-
 .download-item dl dt {
   margin: 0;
   font-weight: normal;
@@ -401,12 +412,9 @@ figure.comparison figcaption {
   font-size: 94%;
   font-style: normal;
 }
-.download-item dl div.remarks {
-  margin-top: 4px;
-  font-size: 0.9rem;
-  font-style: italic;
-}
 .download-item dl span {
+  display: block;
+  padding-top: 1px;
   letter-spacing: 0;
 }
 
@@ -1109,22 +1117,21 @@ a:hover {
   font-weight: bolder;
 }
 
-.gdoc-page h1 {
+.gdoc-page h1, .gdoc-page h2, .gdoc-page h3 {
   font-family: "Chiron Sung HK WS";
-  font-weight: 800;
   font-variation-settings: "PADG" 4;
+}
+
+.gdoc-page h1 {
+  font-weight: 800;
 }
 
 .gdoc-page h2 {
-  font-family: "Chiron Sung HK WS";
   font-weight: 700;
-  font-variation-settings: "PADG" 4;
 }
 
 .gdoc-page h3 {
-  font-family: "Chiron Sung HK WS";
   font-weight: 700;
-  font-variation-settings: "PADG" 4;
 }
 
 img.test {

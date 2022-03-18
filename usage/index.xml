@@ -21,7 +21,7 @@
       
       <guid>/usage/download/</guid>
       <description>下載     昭源宋體和黑體的字型檔案均放置於 Github 提供的檔案庫。按下「下載」按鈕後，瀏覽器會進入本專案在 Github 的 Releases 頁面。確認版本和內容後即可按在 Assets 附件區的 Source code (zip) 或 Source code (tar.gz) 按鈕下載字型文件。
- 昭源宋體 Chiron Sung HK v1.001 (2022-03-16)    下載   Github      昭源黑體 Chiron Hei HK v2.099 預覽版本 (2022-03-16) 注意: Chiron Hei HK 跟之前發表的 Chiron Sans HK 不完全相同。原有專案（Chiron Sans HK 及 Chiron Sans HK Pro）之後會以「昭源黑體（Chiron Hei HK，沿用中文名稱但英文字體名稱不同，亦不再區分 Pro 版）」的形式作後續更新，以跟「昭源宋體 (Chiron Sung HK)」有更佳對應。更多詳情請參閲昭源黑體版本説明頁。    下載   Github      使用     下載後請按照所使用作業系統的步驟，將字型安裝至系統中。視乎所使用的格式，字型名稱或會有所不同。詳情請參閲字型格式頁。</description>
+ 昭源宋體 Chiron Sung HK v1.001 (2022-03-16)    下載   Github      昭源黑體 Chiron Hei HK v2.099 預覽版 (2022-03-16)    下載   Github    注意: Chiron Hei HK 跟之前發表的 Chiron Sans HK 不完全相同。原有專案（Chiron Sans HK 及 Chiron Sans HK Pro）之後會以「昭源黑體（Chiron Hei HK，沿用中文名稱但英文字體名稱不同，亦不再區分 Pro 版）」的形式作後續更新，以跟「昭源宋體 (Chiron Sung HK)」有更佳對應。更多詳情請參閲昭源黑體版本説明頁。   使用     下載後請按照所使用作業系統的步驟，將字型安裝至系統中。視乎所使用的格式，字型名稱或會有所不同。詳情請參閲字型格式頁。</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       
       <guid>/usage/webfont/</guid>
       <description>昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
-網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。而日本平假/片假名屬於 HKSCS 字集，因此有收入。
+網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。日本平假/片假名屬於 HKSCS 字集，亦有收入。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。
 網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
 字體屬可變式字型格式，因此只需載入「正體」(WEBFONT/css/vf.css) 及「斜體」(WEBFONT/css/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。</description>
     </item>
