@@ -37,6 +37,7 @@
     content="網頁字型"
   />
   <meta property="og:site_name" content="昭源字體" />
+  <meta property="og:image" content="/images/og-image.png" />
   <meta property="og:description" content="昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
 網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。日本平假/片假名屬於 HKSCS 字集，亦有收入。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。
 網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
@@ -51,8 +52,9 @@
     />
 
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="網頁字型" />
+  <meta property="twitter:image" content="/images/og-image.png" />
   <meta name="twitter:description" content="昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。
 網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。日本平假/片假名屬於 HKSCS 字集，亦有收入。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。
 網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT/ 目錄下就是可以用於網頁的昭源字體網頁字型。
@@ -68,6 +70,7 @@
       "url" : "/usage/webfont/",
       "headline": "網頁字型",
       "description": "昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。\n網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5\/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。日本平假\/片假名屬於 HKSCS 字集，亦有收入。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。\n網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT\/ 目錄下就是可以用於網頁的昭源字體網頁字型。\n字體屬可變式字型格式，因此只需載入「正體」(WEBFONT\/css\/vf.css) 及「斜體」(WEBFONT\/css\/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。",
+      "thumbnailUrl": "/images/og-image.png",
       "wordCount" : "195",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -167,7 +170,7 @@ media="all"
 
 
 
-<link rel="stylesheet" href="/scss/main.d41db0a923056aded16d00547d2c854dde1911bd1dd9fe89f6c85bd07b0efb18.css" integrity="sha256-1B2wqSMFat7RbQBUfSyFTd4ZEb0d2f6J9shb0HsO&#43;xg=">
+<link rel="stylesheet" href="/scss/main.f897ddf610f31df5888a72945daf37644e37187994552aa484ca19e752cbf38d.css" integrity="sha256-&#43;Jfd9hDzHfWIinKUXa83ZE43GHmUVSqkhMoZ51LL840=">
 
   </head>
 
@@ -1532,7 +1535,7 @@ media="all"
                         <div class="col-md-9 col-xl-10 preview std" id="preview-area" style="max-height:100%;">
                             <main>
                                 <p>昭源宋體 (Chiron Sung HK) 和昭源黑體 (Chiron Hei HK) 是為繁體中文使用者而設、採用現代筆形風格、平衡標準字形和印刷體慣用筆形以適合作熒幕顯示和印刷用途的免費中文字體。</p>
-                                <p>使用者可於此測試區輸入文字，並利用工具欄的選項，預覽昭源宋體在不同參數下的顯示效果。
+                                <p>使用者可於此測試區輸入文字，並利用工具欄的選項，預覽兩款昭源字體在不同參數下的顯示效果。
                                 </p>
                                 注意：
                                 <ol>
