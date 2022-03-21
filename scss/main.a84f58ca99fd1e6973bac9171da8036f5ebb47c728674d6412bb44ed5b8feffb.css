@@ -60,33 +60,36 @@ article.cover-page div.feature {
     display: block;
   }
 }
-article.cover-page div.feature div:first-child {
+article.cover-page div.feature > div:first-child {
   flex: 6;
   text-align: justify;
   margin-right: 16px;
   padding-right: 16px;
 }
 @media screen and (max-width: 991px) {
-  article.cover-page div.feature div:first-child {
+  article.cover-page div.feature > div:first-child {
     margin-bottom: 16px;
     padding-right: 0;
     margin-right: 0;
   }
 }
-article.cover-page div.feature div:first-child h3 {
+article.cover-page div.feature > div:first-child h3 {
   text-align: left;
   justify-content: start;
   display: flex;
   align-items: flex-start;
 }
-article.cover-page div.feature div:first-child h3 span {
+article.cover-page div.feature > div:first-child h3 span {
   flex: 1 1 auto;
   width: 100%;
 }
-article.cover-page div.feature div:last-child {
+article.cover-page div.feature > div:first-child h3 div {
+  padding-right: 8px;
+}
+article.cover-page div.feature > div:last-child {
   flex: 5;
 }
-article.cover-page div.feature div:last-child img {
+article.cover-page div.feature > div:last-child img {
   display: block;
   border-radius: 24px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 2px 8px, rgba(17, 17, 26, 0.05) 0px 4px 16px;
