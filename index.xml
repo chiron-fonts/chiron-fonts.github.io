@@ -21,7 +21,7 @@
       
       <guid>/usage/download/</guid>
       <description>下載     昭源宋體和黑體的字型檔案均放置於 Github 提供的檔案庫。按下「下載」按鈕後，瀏覽器會進入本專案在 Github 的 Releases 頁面。確認版本和內容後即可按在 Assets 附件區的 Source code (zip) 或 Source code (tar.gz) 按鈕下載字型文件。
- 昭源宋體 Chiron Sung HK v1.002 (2022-04-02)    下載   Github      昭源黑體 Chiron Hei HK v2.099 預覽版 (2022-03-16)    下載   Github    注意: Chiron Hei HK 跟之前發表的 Chiron Sans HK 不完全相同。原有專案（Chiron Sans HK 及 Chiron Sans HK Pro）之後會以「昭源黑體（Chiron Hei HK，沿用中文名稱但英文字體名稱不同，亦不再區分 Pro 版）」的形式作後續更新，以跟「昭源宋體 (Chiron Sung HK)」有更佳對應。更多詳情請參閲昭源黑體版本説明頁。   使用     下載後請按照所使用作業系統的步驟，將字型安裝至系統中。視乎所使用的格式，字型名稱或會有所不同。詳情請參閲字型格式頁。</description>
+ 昭源宋體 Chiron Sung HK v1.002 (2022-04-02)    下載   Github      昭源黑體 Chiron Hei HK v2.500 (2022-04-04)    下載   Github    注意: Chiron Hei HK 跟之前發表的 Chiron Sans HK 不完全相同。原有專案（Chiron Sans HK 及 Chiron Sans HK Pro）之後會以「昭源黑體（Chiron Hei HK，沿用中文名稱但英文字體名稱不同，亦不再區分 Pro 版）」的形式作後續更新，以跟「昭源宋體 (Chiron Sung HK)」有更佳對應。更多詳情請參閲昭源黑體版本説明頁。   使用     下載後請按照所使用作業系統的步驟，將字型安裝至系統中。視乎所使用的格式，字型名稱或會有所不同。詳情請參閲字型格式頁。</description>
     </item>
     
     <item>
@@ -75,6 +75,18 @@ Copyright 2014-2022 Tamcy, with Reserved Font Name &amp;#39;Chiron&amp;#39;. Cop
     </item>
     
     <item>
+      <title>昭源字體的新造字元</title>
+      <link>/technical-details/codepoint-additions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/technical-details/codepoint-additions/</guid>
+      <description>思源字體是由 Google 出資、Adobe 製作。對 Adobe 而言，思源宋體 Source Han Serif 和思源黑體 Source Han Sans 是屬於其開源家族 “Source” 系列的一員（相對應的拉丁字型是 Source Serif 和 Source Sans），而 Google 一方將之命名為 Noto Serif CJK 和 Noto Sans CJK，作為其 Noto 字體家族的一員。Google Noto 字體專案的宏願是完全覆蓋目前 Unicode 標準下的所有字碼，令使用者在閲讀文章時不會再出現「豆腐」（即由於字體不支援該字碼，作業系統或應用程式於是用一個打交叉空心盒子之類的符號代替的情況）。因此，補字工作理應由思源字體的開發方完成，昭源字體本來並無打算自行造字。尤其思源字體本身完整覆蓋 HKSCS 字集，收字甚至比一般商業字體更完善（我見過某些商業字體會缺少「𡃁、𨋢、𠵱、𠱁」等字），一般使用上相信很難會有缺字問題，自行造字的需要其實很小。
+不過，由於種種原因，昭源字體仍然有一些思源字體沒有的新造字。
+   香港增補字符集補編新收字元 粵語擬聲字 粵語研究相關網頁字頭 台、客語字元      香港增補字符集補編新收字元     中諮會在發表《香港增補字符集⸺2016》後有對之做下列更新：
+ 在 2019 年 1 月 14 日會議上通過增收「岃」(U+5C83) 字。 在 2021 年 2 月 3 日會議上通過增收增收「𫬷」(U+2BB37) 字、「𭉝」(U+2D25D) 字和將「𢫏」(U+22ACF) 的字形右上方（本作冂，有鈎）改為與「冚」相同（即冖）。  其中 2021 年的某些更新尚未在思源字體反映，「𫬷」、「𭉝」兩字更是仍未能在大多數作業系統顯示。不過，這些變更已獲得 UTC（Unicode 技術委員會）在 2021 年 10 月的會議一致通過，而昭源字體亦率先支援這些變更，上述新增及修訂字形均能使用昭源字體正確輸出。</description>
+    </item>
+    
+    <item>
       <title>昭源黑體版本説明</title>
       <link>/technical-details/chiron-sans-fonts-differences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,6 +97,21 @@ Copyright 2014-2022 Tamcy, with Reserved Font Name &amp;#39;Chiron&amp;#39;. Cop
 不過，一如創作背景所述，我個人屬意的是日常慣見的商業字體字樣（因為商業字體一般會在官方標準和審美間取得平衡），因此在「思源黑體香港版」出現之前，我就以「思源黑體台灣版」為底本修改成昭源甄黑體 (CYanHeiHK)，並在 2016 年發表。
 昭源甄黑體的特性如下：
  基於思源黑體 v1.00x 台灣版改造 字體家族名稱為 CYanHeiHK 提供三款字重，分別是 Light, Regular 和 Bold 網頁字型版本收約 8,010 字元，每款字重佔 1.</description>
+    </item>
+    
+    <item>
+      <title>有關昭源字體的 Text 分支和新增字重</title>
+      <link>/technical-details/subfamily/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/technical-details/subfamily/</guid>
+      <description>Text 子家族     有關注「思源宋體」字體製作進程的人或會知道，「思源宋體」是以 Adobe 開發的商用日本字體「小塚明朝 (Kozuka Mincho)」為基礎，再做了大量擴展和修訂工作，所以「思源宋體」繼承了許多「小塚明朝」的字形特徵，其中一個就是偏大的字面率。
+小塚明朝本來是日文字體，漢字字面率偏大，在漢字與假名混用的環境下可能沒有甚麼問題。但在中文、全漢字的排版環境，於正文或粗字重的場合，大字面率的設計會令字符顯得擠逼，而這正是我使用思源宋體排印時的觀感（雖然有人指出其實思源宋體的字面率已經比小塚明朝小，但我還是覺得太過侷促）。
+因此，昭源宋體特新增一 “Text” 子家族 (subfamily)，將原本昭源宋體的字圖縮小約 4%（而字寬、字高值不變），令字與字在不必特別調整字符間距的情況下也可以有多點「呼吸」空間。使用者可以下載此一 PDF 檔案，並列印出來看看兩者分別。
+為與「思源宋體」保持一致，「昭源黑體 (Chiron Hei HK)」也有相同的 “Text” 子家族可供選用。
+留意以上有關字重、字面等考慮和使用場合的説明並非金科玉律，還得看實際應用情況而定。
+新增字重     雖然思源黑體和宋體都有提供 7 款字重，不過兩款字型的字重並不對稱。
+   字重值 思源宋體字重代號 思源黑體字重代號     250 ExtraLight ExtraLight   300 Light Light   350 無 Normal   400 Regular Regular   500 Medium Medium   600 SemiBold 無   700 Bold Bold   900 Heavy Heavy    從上表可見，思源宋體沒有 Normal 字重，思源黑體則沒有 SemiBold 字重。事實上，思源宋體的 Light 與 Regular 之間和思源黑體的 Medium 的 Bold 之間差距不是十分明顯，沒有相應字重可以理解（而思源黑體之所以有 Normal 和 Regular 字重是因為 Regular 字重方便與 Google 的 Noto/Roboto 字體配搭，而 Normal 則用來與 Adobe 的 Source Sans 配搭）。</description>
     </item>
     
     <item>
