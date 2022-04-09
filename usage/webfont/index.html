@@ -71,7 +71,7 @@
       "headline": "網頁字型",
       "description": "昭源黑體及宋體均提供可以適用於網頁的網頁字型 (webfont) 版本，只須載入相關的 CSS 檔案再在 stylesheet 指定字體即可使用。\n網頁字型是 OTF 檔的子集版，涵蓋整個 Big-5\/HKSCS-2016 字集，其餘為《康熙字典》字頭、特殊粵語專用字等。日本平假\/片假名屬於 HKSCS 字集，亦有收入。網頁字型針對繁體中文用途，不支援簡體中文、諺文等。\n網頁字型採用 Unicode-range subsetting 技術，將每個字重的單一字型檔拆分成大約 140 個細小檔案，並在 CSS 指明該檔案所涵蓋的字碼。瀏覽器只會在網頁有用到該字碼時才會載入相關字型檔，大大減低須下載字型檔案的大小。常用字做 subsetting 的字碼區分方法跟 Google Fonts 的 Noto Sans HK 相同。不過仍建議開發者觀察實際使用環境的下載量會否對使用者或伺服器網絡造成太大負荷。     載入方式  1. 手動下載 2. NPM 3. CDN (jsDelivr)   使用      載入方式     1. 手動下載     根據取得字型頁面的指示下載字體並解壓縮後，在相關字型的 WEBFONT\/ 目錄下就是可以用於網頁的昭源字體網頁字型。\n字體屬可變式字型格式，因此只需載入「正體」(WEBFONT\/css\/vf.css) 及「斜體」(WEBFONT\/css\/vf-italic.css) 兩個 CSS 檔案（用家可按需要決定是否載入斜體），就可以任意調校字重。",
       "thumbnailUrl": "/images/og-image.png",
-      "wordCount" : "195",
+      "wordCount" : "206",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1137,14 +1137,14 @@ media="all"
 </span></span><span class="line"><span class="cl">    <span class="c">/* 黑體的字體家族名稱是 &#34;Chiron Hei HK WS&#34; */</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Chiron Sung HK WS&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c">/* 指定字重。由於是 VF 字型，字重值可微調 */</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 指定字重。由於是 VF 字型，字重值可在 250 至 900 間任意調整 */</span>
 </span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="mi">310</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c">/* 如有載入斜體 CSS 檔就可以在中英混排時使用真正的斜體英數字 */</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 如有載入斜體 CSS 檔就可以通過 “font-style: italic” 宣吿在中英混排時使用真正的斜體英數字 */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-style</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c">/* 通過 font-variation-settings 指定「字面調整」變化 */</span>
-</span></span><span class="line"><span class="cl">    <span class="n">font-variation-settings</span><span class="p">:</span> <span class="s2">&#34;PADG&#34;</span> <span class="mi">4</span><span class="p">;</span> <span class="c">/* 縮小 4% */</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 指定「字面調整軸」變化，有效值為 0 至 10 之間，Text 分支字面率等同本軸的 “6” */</span>
+</span></span><span class="line"><span class="cl">    <span class="n">font-variation-settings</span><span class="p">:</span> <span class="s2">&#34;PADG&#34;</span> <span class="mi">4</span><span class="p">;</span> <span class="c">/* 意即將字面縮小 2% */</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
