@@ -875,7 +875,6 @@ code {
 }
 #font-preview-dialog #previewModal {
   z-index: 9999;
-  background-color: red;
 }
 #font-preview-dialog #previewModal button {
   font-size: 0.875em;
