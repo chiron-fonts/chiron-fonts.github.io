@@ -434,7 +434,7 @@ figure.comparison figcaption {
 }
 
 code {
-  font-family: "Liberation Mono", monospace, "Chiron Hei HK WS" !important;
+  font-family: "Liberation Mono", "Chiron Hei HK WS", monospace !important;
 }
 
 #font-preview-dialog .modal {
