@@ -779,6 +779,7 @@ code {
 #font-preview-dialog {
   font-family: "Chiron Sung HK WS", "AND-Regular";
   font-size: 0.875em;
+  font-variation-settings: "PADG" 0;
 }
 #font-preview-dialog main.font-hei {
   font-family: "Chiron Hei HK WS", "AND-Regular";

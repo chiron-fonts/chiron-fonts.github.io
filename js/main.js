@@ -103,14 +103,14 @@ $(window).on('load', function () {
             });
         });
 
-        $('#font-instances button', $box).on('mouseover', function (e) {
+        $('#font-instances button', $box).on('click', function (e) {
             $('#font-instances button', $box).removeClass('btn-secondary').addClass('btn-light');
             $(this).removeClass('btn-light').addClass('btn-secondary');
             $content.css('font-weight', $(this).data('weight'));
             $('#font-weight-range', $box).val($(this).data('weight')).trigger('change');
         });
 
-        $('#font-padding-preset button', $box).on('mouseover', function (e) {
+        $('#font-padding-preset button', $box).on('click', function (e) {
             var $this = $(this);
             $this.parent().find('button').removeClass('btn-secondary').addClass('btn-light');
             $this.removeClass('btn-light').addClass('btn-secondary');
@@ -119,7 +119,7 @@ $(window).on('load', function () {
             // $('#font-weight-range', $box).val($(this).data('weight')).trigger('change');
         });
 
-        $('#font-italic-selector button', $box).on('mouseover', function (e) {
+        $('#font-italic-selector button', $box).on('click', function (e) {
             var $this = $(this);
             $this.parent().find('button').removeClass('btn-secondary').addClass('btn-light');
             $this.removeClass('btn-light').addClass('btn-secondary');
@@ -130,7 +130,7 @@ $(window).on('load', function () {
             }
         });
 
-        $('#font-family-selector button', $box).on('mouseover', function (e) {
+        $('#font-family-selector button', $box).on('click', function (e) {
             var $this = $(this);
             $this.parent().find('button').removeClass('btn-secondary').addClass('btn-light');
             $this.removeClass('btn-light').addClass('btn-secondary');
